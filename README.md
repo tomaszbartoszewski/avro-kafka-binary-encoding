@@ -3,9 +3,13 @@
 ## Resources
 
 https://docs.confluent.io/current/schema-registry/serdes-develop/index.html#wire-format
+
 https://avro.apache.org/docs/1.7.7/spec.html#binary_encoding
+
 https://docs.confluent.io/current/kafka-rest/quickstart.html
+
 https://docs.confluent.io/current/schema-registry/develop/api.html
+
 https://github.com/confluentinc/cp-all-in-one
 
 ## Requirements
