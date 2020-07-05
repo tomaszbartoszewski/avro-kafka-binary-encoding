@@ -1,0 +1,120 @@
+{
+    "type": "record",
+    "name": "FactoryWorker",
+    "fields": [
+        {
+            "name": "employeeId",
+            "type": "string"
+        },
+        {
+            "name": "employeeRole",
+            "type": {
+                "name": "enumType",
+                "symbols": [
+                    "Manager",
+                    "ProductionWorker"
+                ],
+                "type": "enum"
+            }
+        },
+        {
+            "name": "team",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "weeklyProduction",
+            "type": {
+                "items": {
+                    "fields": [
+                        {
+                            "name": "timeStart",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "name": "timeEnd",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "name": "manufactured",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "DailyProduction",
+                    "type": "record"
+                },
+                "type": "array"
+            }
+        },
+        {
+            "name": "workSchedule",
+            "type": [
+                "null",
+                {
+                    "name": "Schedule",
+                    "type": "record",
+                    "fields": [
+                        {
+                            "name": "monday",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "name": "tuesday",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "name": "wednesday",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "name": "thursday",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "name": "friday",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "name": "saturday",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "name": "sunday",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

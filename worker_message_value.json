@@ -1,0 +1,52 @@
+{
+    "employeeId": "aa3afd44-8119-4565-809b-9df75d6ddab0",
+    "employeeRole": "ProductionWorker",
+    "team": {
+        "string": "B"
+    },
+    "weeklyProduction": [
+        {
+            "timeStart": {
+                "string": "0700"
+            },
+            "timeEnd": {
+                "string": "1500"
+            },
+            "manufactured": 12
+        },
+        {
+            "timeStart": {
+                "string": "1200"
+            },
+            "timeEnd": {
+                "string": "2000"
+            },
+            "manufactured": 8
+        }
+    ],
+    "workSchedule": {
+        "Schedule": {
+            "monday": {
+                "string": "0100"
+            },
+            "tuesday": {
+                "string": "0200"
+            },
+            "wednesday": {
+                "string": "0300"
+            },
+            "thursday": {
+                "string": "0400"
+            },
+            "friday": {
+                "string": "0500"
+            },
+            "saturday": {
+                "string": "0600"
+            },
+            "sunday": {
+                "string": "0700"
+            }
+        }
+    }
+}
