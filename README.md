@@ -62,6 +62,21 @@ Publish and read messages with nullable long schema.
 ./nullable_long.sh
 ```
 
+Publish and read messages with union of three types schema.
+```
+./union.sh
+```
+
+Publish and read message which is a map of longs values.
+```
+./map.sh
+```
+
+Publish and read messages of complex object with enum.
+```
+./person.sh
+```
+
 Publish and read message with complex object.
 ```
 ./complex_object.sh
